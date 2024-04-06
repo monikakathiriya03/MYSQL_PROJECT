@@ -8,7 +8,7 @@ app.use(express.urlencoded());
 const connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'MONIKA@123',
+    password: 'admin@123',
     database: 'node_mysql'
 });
 
@@ -47,3 +47,12 @@ app.get('/api/user/:id', (req, res) => {
 app.listen(1919,() => {
     console.log('Server Start at http://localhost:1919');
 });
+
+
+// create table user(
+//     firstName varchar (20),
+//     lastName varchar (30),
+//     email varchar(30),
+//     password varchar(20),
+//     mobileNo double
+//  );
